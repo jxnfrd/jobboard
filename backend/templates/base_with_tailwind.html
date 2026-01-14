@@ -9,7 +9,7 @@
     
     <!-- Favicon and Logo -->
     <link rel="icon" type="image/x-icon" href="{{logo}}" />
-    <link rel="shortcut icon" href="{{favicon}}">
+    <link rel="shortcut icon" href="/static/img/favicon.png">
     
     <!-- Open Graph Meta Tags for Social Sharing -->
     <meta property="og:image" content="{{logo}}" />
@@ -29,7 +29,8 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS - Using compiled version with all utilities -->
+    <!-- Tailwind CSS - Using CDN as fallback for missing compiled file -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'css/tailwind-output.css' %}">
 
         <!-- jQuery -->
