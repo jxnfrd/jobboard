@@ -1,8 +1,8 @@
 def get_pj_icons(request):
     logos = {
-        "jobopenings": "http://cdn.peeljobs.com/jobopenings1.png",
-        "logo": "https://cdn.peeljobs.com/logo.png",
-        "favicon": "https://cdn.peeljobs.com/favicon.png",
-        "cdn_path": "https://cdn.peeljobs.com/",
+        "jobopenings": "/static/jobopenings1.png",
+        "logo": "/static/logo.png",
+        "favicon": "/static/favicon.png",
+        "cdn_path": "/static/",
     }
     return logos
