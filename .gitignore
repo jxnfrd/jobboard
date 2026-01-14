@@ -19,7 +19,7 @@ dist/
 env
 env/
 venv/
-.env
+# .env
 secret
 staticfiles/CACHE
 backend/staticfiles/

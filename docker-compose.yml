@@ -14,7 +14,7 @@ services:
     expose:
       - 8000
     env_file:
-      - env.production
+      - .env
     depends_on:
       - db
       - redis
@@ -29,7 +29,7 @@ services:
       - media_volume:/app/media
       - whoosh_volume:/app/whoosh_index
     env_file:
-      - env.production
+      - .env
     depends_on:
       - db
       - redis
@@ -42,7 +42,7 @@ services:
     volumes:
       - ./backend:/app
     env_file:
-      - env.production
+      - .env
     depends_on:
       - db
       - redis
