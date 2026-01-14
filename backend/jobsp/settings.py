@@ -32,6 +32,8 @@ GIT_APP_ID = os.getenv("GITAPPID")
 GIT_APP_SECRET = os.getenv("GITAPPSECRET")
 
 ALLOWED_HOSTS = ["jobs.apexvanguarddynamics.com", "peeljobs.com", "test.peeljobs.com", "localhost", "127.0.0.1"]
+CSRF_TRUSTED_ORIGINS = ["https://jobs.apexvanguarddynamics.com", "https://peeljobs.com"]
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # tw app
 tw_oauth_token_secret = os.getenv("twoauthtokensecret")
